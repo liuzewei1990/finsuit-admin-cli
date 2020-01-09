@@ -1,0 +1,373 @@
+{
+    "contentManagement1": [
+        {
+            "title": "文章列表",
+            "icon": "icon-text",
+            "href": "page/news/newsList.html",
+            "spread": false
+        },
+        {
+            "title": "百度一下",
+            "icon": "icon-text",
+            "href": "https://www.baidu.com/",
+            "spread": false
+        },
+        {
+            "title": "其他页面",
+            "icon": "&#xe630;",
+            "href": "",
+            "spread": false,
+            "children": [
+                {
+                    "title": "404页面",
+                    "icon": "&#xe61c;",
+                    "href": "page/404.html",
+                    "spread": false
+                },
+                {
+                    "title": "登录",
+                    "icon": "&#xe609;",
+                    "href": "page/login/login.html",
+                    "spread": false,
+                    "target": "_blank"
+                }
+            ]
+        }
+    ],
+    "contentManagement2": [
+        {
+            "title": "新手专享",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "每日一题",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "拼团活动",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "拼人数",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "任务中心",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "单单返",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "复投活动",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "签到",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "证券开户",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "银行活动",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "推荐产品",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "链路闭环",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        },
+        {
+            "title": "帮助中心",
+            "icon": "icon-text",
+            "href": "",
+            "spread": false
+        }
+    ],
+    "contentManagement3": [
+        {
+            "title": "一级菜单",
+            "icon": "&#xe630;",
+            "href": "",
+            "spread": false,
+            "children": [
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "title": "一级菜单",
+            "icon": "&#xe630;",
+            "href": "",
+            "spread": false,
+            "children": [
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "title": "一级菜单",
+            "icon": "&#xe630;",
+            "href": "",
+            "spread": false,
+            "children": [
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "title": "一级菜单",
+            "icon": "&#xe630;",
+            "href": "",
+            "spread": false,
+            "children": [
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                }
+            ]
+        },
+        {
+            "title": "一级菜单",
+            "icon": "&#xe630;",
+            "href": "",
+            "spread": false,
+            "children": [
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                },
+                {
+                    "title": "二级菜单",
+                    "icon": "&#xe61c;",
+                    "href": "http://liuup.com",
+                    "spread": false
+                }
+            ]
+        }
+    ],
+    "memberCenter": [
+        {
+            "title": "用户管理",
+            "icon": "&#xe612;",
+            "href": "page/user/userList.html",
+            "spread": false
+        },
+        {
+            "title": "角色管理",
+            "icon": "&#xe612;",
+            "href": "page/user/roleList.html",
+            "spread": false
+        },
+        {
+            "title": "权限管理",
+            "icon": "&#xe612;",
+            "href": "page/user/authList.html",
+            "spread": false
+        }
+    ],
+    "systemeSttings": [
+        {
+            "title": "系统基本参数",
+            "icon": "&#xe631;",
+            "href": "page/systemSetting/basicParameter.html",
+            "spread": false
+        },
+        {
+            "title": "系统日志",
+            "icon": "icon-log",
+            "href": "page/systemSetting/logs.html",
+            "spread": false
+        }
+    ]
+}
