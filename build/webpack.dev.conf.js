@@ -30,6 +30,10 @@ if (cooked.length > 0) {
 const devWebpackConfig = merge(baseWebpackConfig, {
 
     entry: entrys,
+    output: {
+        // 为开发服务器配置根目录
+        publicPath: "/pages/"
+    },
     module: {
         rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
     },

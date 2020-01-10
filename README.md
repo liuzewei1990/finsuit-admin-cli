@@ -1,6 +1,7 @@
 ## 比财H5活动开发架构
 [TOC]
-> vue
+> layui + vue
+> 预览:[demo](http://liuup.com/admin/)
 
 ### npm命令说明
 
@@ -85,3 +86,9 @@ npm run build:xxx [xxx] --report
         └─js
 ```
 -------------------
+
+### 部署
+
+``` bash
+
+```

@@ -15,7 +15,8 @@ const webpackConfig = {
         'vue': 'Vue',
         'vue-router': 'VueRouter',
         'vuex': 'Vuex',
-        'axios': 'axios'
+        'axios': 'axios',
+        'element-ui': 'element-ui'
     },
     output: {
         path: config.build.assetsRoot,
