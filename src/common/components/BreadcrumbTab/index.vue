@@ -9,8 +9,9 @@
         <span class="text">{{item.meta.title}}</span>
       </el-breadcrumb-item>
     </el-breadcrumb>
-    <div class="close">
-      <el-button @click="$router.back()" class="btn" plain size="mini" icon="el-icon-close"></el-button>
+    <div class="close" v-show="$route.path !== '/'">
+      <!-- <el-button @click="$router.back()" class="btn" size="mini" icon="el-icon-close"></el-button> -->
+      <span v-show="$route.path !== '/'" class="el-icon-arrow-left" @click="$router.back()">返回</span>
     </div>
   </div>
 </template>
@@ -45,9 +46,10 @@ export default {
 </script>
 <style lang='less' scoped>
 .breadcrumb-box {
-  //   height: 30px;
-  border-bottom: 1px solid #eee;
+  height: 20px;
+  border-bottom: 1px dashed #eee;
   padding-bottom: 5px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 
@@ -62,6 +64,7 @@ export default {
   .close {
     font-size: 13px;
     color: #606266;
+    cursor: pointer;
   }
 
   .breadcrumb {
