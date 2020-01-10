@@ -30,7 +30,7 @@ const CONFIG = {
         actityCode: "ANSWER_ACTIVITY",
         // api host
         baseUrlHost: (window.location.protocol + '//' + window.location.host),
-        baseUrlHost: "https://app-test1.bicai365.com",
+        baseUrlHost: "http://easy-mock.liuup.com/mock/5e16e00f0a2f9f42cfec1cda/layuiAdmin",
         // api path
         baseUrlPath: "/finsuit/finsuitPhone/deal",
         // 阿里云静态文件地址
