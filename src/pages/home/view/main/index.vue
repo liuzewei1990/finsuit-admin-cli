@@ -1,16 +1,14 @@
-<!-- 下载落地页 -->
+
 <template>
-  <section class=''>我是vue开发的页面1</section>
+  <section class='main'>
+    首页
+  </section>
 </template>
 
 <script>
-
 export default {
-  components: {},
   data () {
-    return {
-
-    };
+    return {}
   },
   created () {
 
@@ -20,7 +18,6 @@ export default {
   },
   //方法集合
   methods: {
-
   },
 }
 </script>

@@ -1,6 +1,7 @@
 /* eslint-disable no-new */
 import Vue from "vue"
-import App from "./user.vue"
+import App from "./App.vue"
+import router from "./router"
 // import store from "./store/index"
 
 /* 注册配置文件 */
@@ -19,6 +20,7 @@ Vue.prototype["$trackEvents"] = trackEvents;
 
 
 const app = new Vue({
+    router,
     // store,
     components: { App },
     template: "<App/>"
