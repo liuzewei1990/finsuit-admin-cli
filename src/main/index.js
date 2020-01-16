@@ -29,6 +29,6 @@ const app = new Vue({
     template: "<App/>"
 });
 
-app.$bootstrap();
+// app.$bootstrap();
 
-// app.$mount("#app")
+app.$mount("#app")

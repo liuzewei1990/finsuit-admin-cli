@@ -1,8 +1,5 @@
 <template>
   <div id="main">
-    <!--  -->
-    <BreadcrumbTab></BreadcrumbTab>
-    <!--  -->
     <keep-alive>
       <router-view v-if="$route.meta.keepAlive"></router-view>
     </keep-alive>
@@ -11,9 +8,7 @@
 </template>
 
 <script>
-import BreadcrumbTab from "@common/finsuit-components/BreadcrumbTab/index.vue"
 export default {
-  components: { BreadcrumbTab },
 
 }
 </script>

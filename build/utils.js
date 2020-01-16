@@ -6,6 +6,7 @@ const packageConfig = require('../package.json')
 const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const PAGE_PATH = path.resolve(__dirname, '../src/pages')
+const MAIN_PATH = path.resolve(__dirname, '../src/main')
 const merge = require('webpack-merge')
 
 exports.assetsPath = function (_path) {
@@ -114,10 +115,13 @@ exports.getAlias = function () {
     return alias;
 }
 
+
 //多入口配置
 exports.entries = function () {
     const entryFiles = glob.sync(PAGE_PATH + '/*/*.js')
-    const map = {}
+    const map = {
+        main: glob.sync(MAIN_PATH + '/index.js')[0]
+    }
     entryFiles.forEach((filePath) => {
         const filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))
         map[filename] = filePath
@@ -125,9 +129,13 @@ exports.entries = function () {
     return map
 }
 
+// 打包时输出 html 路径
 exports.htmlPluginPath = function (currBuildPackName) {
-    const entryHtml = glob.sync(PAGE_PATH + '/*/*.html')
-    const reg = new RegExp(`/${currBuildPackName}/`);
+    let entryHtml = glob.sync(PAGE_PATH + '/*/*.html');
+    // 添加main的入口html
+    entryHtml = entryHtml.concat(glob.sync(MAIN_PATH + '/index.html'));
+
+    let reg = new RegExp(`/${currBuildPackName}/`);
     let resPath = "";
     entryHtml.forEach((filePath) => {
         if (reg.test(filePath)) resPath = filePath;
@@ -135,18 +143,20 @@ exports.htmlPluginPath = function (currBuildPackName) {
     return resPath;
 }
 
-//多页面输出配置
+// 获取 HtmlWebpackPlugin 多入口实例
 exports.htmlPlugin = function (devPackNameArr) {
-
     const entryHtml = glob.sync(PAGE_PATH + '/*/*.html')
     const arr = []
+    arr.push(new HtmlWebpackPlugin({
+        template: glob.sync(MAIN_PATH + '/index.html')[0],
+        filename: 'index.html',
+        chunks: ["main"],
+        inject: true
+    }))
 
     entryHtml.forEach((filePath) => {
         let filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'))
-        let conf = {};
-
-        // 开发环境
-        conf = {
+        let conf = {
             template: filePath,
             filename: filename + '/index.html',
             chunks: [filename],

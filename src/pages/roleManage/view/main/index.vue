@@ -117,7 +117,7 @@ var jsonTree = function (data, config) {
   return jsonTree;
 };
 // import { getRoleManages, postAddRole, patchEditRole, deleteRole, getRolesTreeConfig, patchRolesTreeSave } from "@src/apis";
-import CommonTable from '@common/components/CommonTable';
+import CommonTable from '@common/finsuit-components/CommonTable';
 export default {
   components: { CommonTable },
   data () {

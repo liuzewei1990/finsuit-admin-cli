@@ -2,7 +2,10 @@
 import Vue from "vue"
 import App from "./App.vue"
 import router from "./router"
-// import store from "./store/index"
+import store from "./store/index"
+
+import finsuit from "@common/finsuit-h5"
+Vue.use(finsuit);
 
 /* 注册配置文件 */
 import config from "./config/config.index.js"
@@ -21,11 +24,12 @@ Vue.prototype["$trackEvents"] = trackEvents;
 
 const app = new Vue({
     router,
-    // store,
+    store,
     components: { App },
     template: "<App/>"
 });
 
+app.$bootstrap();
 
 
-app.$mount("#app")
+// app.$mount("#app")

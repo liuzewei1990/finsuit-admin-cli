@@ -93,7 +93,7 @@
 
 <script>
 // import { getUserManages, postAddUser, patchEditUser, getRolesTree, patchConfigRole, deleteUserManage } from "@src/apis";
-import CommonTable from '@common/components/CommonTable';
+import CommonTable from '@common/finsuit-components/CommonTable';
 
 export default {
   components: { CommonTable },

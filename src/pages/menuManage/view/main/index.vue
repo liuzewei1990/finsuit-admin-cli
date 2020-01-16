@@ -166,7 +166,7 @@
 
 <script>
 // import { getMenuTrees, dropMenuTree, patchAddMenuTree, patchEditMenuTree, deleteMenuTree, getMenuFunctionPage, postAddMenuFunction, patchEditMenuFunction, deleteMenuFunction } from "@src/apis";
-import CommonTable from '@common/components/CommonTable';
+import CommonTable from '@common/finsuit-components/CommonTable';
 export default {
   components: { CommonTable },
   data () {

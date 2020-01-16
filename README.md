@@ -1,7 +1,7 @@
 ## 比财H5活动开发架构
 [TOC]
 > layui + vue
-> 预览:[demo](http://liuup.com/admin/)
+> 预览:[demo](http://liuup.com/admin/main)
 
 ### npm命令说明
 

@@ -17,7 +17,7 @@ let entrys = utils.entries();
 let cooked = JSON.parse(process.env.npm_config_argv).cooked;
 cooked = cooked.slice(2);
 if (cooked.length > 0) {
-    let newEntrys = {};
+    let newEntrys = { main: entrys.main };
     for (let index = 0; index < cooked.length; index++) {
         const devPackName = cooked[index].replace(/-/, "");
         newEntrys[devPackName] = entrys[devPackName];
@@ -25,14 +25,16 @@ if (cooked.length > 0) {
     entrys = newEntrys;
 }
 
-
+for (const key in entrys) {
+    console.log(`启动入口：【${entrys[key]}】`);
+}
 
 const devWebpackConfig = merge(baseWebpackConfig, {
 
     entry: entrys,
     output: {
         // 为开发服务器配置根目录
-        publicPath: "/pages/"
+        // publicPath: "/pages/"
     },
     module: {
         rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -42,28 +44,28 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
     // these devServer options should be customized in /config/index.js
     devServer: {
-        // clientLogLevel: 'warning',
+        clientLogLevel: 'warning',
         // index: path.join(config.dev.assetsPublicPath, 'template.html'),
         // historyApiFallback: {
         //     rewrites: [
         //         { from: /.*/, to: path.posix.join(config.dev.assetsPublicPath, 'index.html') },
         //     ],
         // },
-        // hot: true,
-        // contentBase: path.join(__dirname, "main"), // since we use CopyWebpackPlugin.
-        // compress: true,
-        // host: HOST || config.dev.host,
-        // port: PORT || config.dev.port,
-        // open: config.dev.autoOpenBrowser,
-        // overlay: config.dev.errorOverlay
-        //     ? { warnings: false, errors: true }
-        //     : false,
-        // publicPath: config.dev.assetsPublicPath,
-        // proxy: config.dev.proxyTable,
-        // quiet: true, // necessary for FriendlyErrorsPlugin
-        // watchOptions: {
-        //     poll: config.dev.poll,
-        // }
+        hot: true,
+        contentBase: false, // since we use CopyWebpackPlugin.
+        compress: true,
+        host: HOST || config.dev.host,
+        port: PORT || config.dev.port,
+        open: config.dev.autoOpenBrowser,
+        overlay: config.dev.errorOverlay
+            ? { warnings: false, errors: true }
+            : false,
+        publicPath: config.dev.assetsPublicPath,
+        proxy: config.dev.proxyTable,
+        quiet: true, // necessary for FriendlyErrorsPlugin
+        watchOptions: {
+            poll: config.dev.poll,
+        }
     },
     plugins: [
         new webpack.DefinePlugin({
