@@ -52,8 +52,8 @@ export default {
   },
   computed: {
     ...mapState({
-      activeIndex2: state => state.main.activeIndex2,
-      menuTabs: state => state.main.menuTabs,
+      activeIndex2: state => state.menuTabs.activeIndex2,
+      menuTabs: state => state.menuTabs.menuTabs,
     })
   },
   created () {
@@ -68,7 +68,7 @@ export default {
 
     // 点击tab
     clickTab (tab) {
-      this.switchTab(tab.name)
+      this.switchTab(tab.name);
     },
     // 删除tab
     deleteTab (tabTitle) {

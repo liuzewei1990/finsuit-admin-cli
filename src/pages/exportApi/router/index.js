@@ -12,14 +12,7 @@ export default new Router({
             name: 'index',
             path: '/',
             component: require('../view/main').default,
-            meta: { title: '首页', requiresAuth: true, keepAlive: true },
-            // redirect: "/",
-        },
-        {
-            name: 'login',
-            path: '/login',
-            component: require('../view/login').default,
-            meta: { title: '登录', requiresAuth: false, keepAlive: true },
+            meta: { title: '首页', requiresAuth: false, keepAlive: true },
             // redirect: "/",
         },
         // {

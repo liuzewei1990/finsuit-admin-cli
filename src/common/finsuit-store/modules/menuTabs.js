@@ -1,3 +1,7 @@
+/**
+ * 右侧tab相关store模块
+ */
+
 // 默认为首页tab
 let homeTab = {
     href: "home/index.html",
@@ -7,8 +11,6 @@ let homeTab = {
 }
 export default {
     state: {
-        // 左侧导是否收起
-        isCollapse: false,
         // 当前显示的tab
         activeIndex2: '首页',
         // 所有打开的tab
@@ -16,9 +18,6 @@ export default {
     },
 
     mutations: {
-        IS_COLLAPSE: (state, isCollapse) => {
-            state.isCollapse = isCollapse;
-        },
 
         SET_TABS: (state, tabs) => {
             state.menuTabs = tabs;
@@ -33,13 +32,6 @@ export default {
         },
     },
     actions: {
-        /**
-         * 菜单收起活展开
-         */
-        switchCollapse ({ commit, dispatch, state, rootState }) {
-            let isCollapse = !state.isCollapse;
-            commit('IS_COLLAPSE', isCollapse);
-        },
 
         /**
          * 添加tab 接收tab对象

@@ -21,12 +21,6 @@ Vue.prototype["$api"] = api;
 import * as trackEvents from "./apis/track-events-api.js"
 Vue.prototype["$trackEvents"] = trackEvents;
 
-/* 注册iframePostMessageApi接口 */
-import iframePostMessageApi from "./utils/iframePostMessageApi.js"
-
-/* 导入路由拦截器 */
-import "./router/routerController.js"
-
 
 const app = new Vue({
     router,
@@ -35,9 +29,6 @@ const app = new Vue({
     template: "<App/>"
 });
 
-// app.$bootstrap(); 
+app.$bootstrap();
 
-app.$mount("#app")
-
-// 监听postmessage
-iframePostMessageApi.call(app);
+// app.$mount("#app")

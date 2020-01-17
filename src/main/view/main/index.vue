@@ -1,37 +1,35 @@
 
 <template>
-
   <el-container>
+
     <!-- 上面头部 -->
     <el-header height="50px">
-      <div class="tab-home-btn" @click="switchCollapse">
-        <i class="el-icon-date"></i>
-      </div>
-      {{$store.state.main.activeIndex2}}
+      <Header></Header>
     </el-header>
 
     <!-- 下面主体 -->
     <el-container class="main">
+
       <!-- 左侧导航 -->
       <el-aside :width="isCollapse?'auto':'auto'">
-        <Menu :isCollapse="isCollapse"></Menu>
+        <Menu></Menu>
       </el-aside>
-
       <!-- 右侧内容 -->
       <el-main :class="isCollapse?'el-main-64':'el-main-210'" ref="elMain">
         <BodyTab ref="BodyTab"></BodyTab>
       </el-main>
-    </el-container>
 
+    </el-container>
   </el-container>
 </template>
 
 <script>
+import Header from "./modules/header.vue"
 import Menu from "./modules/menu.vue"
 import BodyTab from "./modules/bodyTab.vue"
 import { mapState, mapActions } from "vuex"
 export default {
-  components: { Menu, BodyTab },
+  components: { Header, Menu, BodyTab },
   data () {
     return {
 
@@ -39,7 +37,7 @@ export default {
   },
   computed: {
     ...mapState({
-      isCollapse: state => state.main.isCollapse
+      isCollapse: state => state.config.isCollapse
     })
   },
   methods: {
